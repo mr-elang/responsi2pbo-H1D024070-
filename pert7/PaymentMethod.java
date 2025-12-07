@@ -4,5 +4,9 @@ public interface PaymentMethod {
     // - processPayment(): digunakan untuk memproses pembayaran
     // - getPaymentDetails(): mengembalikan informasi pembayaran
     // - getTransactionFee(): mengembalikan biaya transaksi
-    // - getBalance(): mengembalikan saldo	
+    // - getBalance(): mengembalikan saldo
+    String processPayment();
+    String getPaymentDetails();
+    double getTransactionFee();
+    double getBalance();
 }

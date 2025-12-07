@@ -9,3 +9,11 @@
 4. Bagaimana keyword super membantu membedakan atribut yang memiliki nama sama antara parent dan child?
 
 5. Mengapa pendekatan inheritance lebih efisien dibanding menyalin ulang seluruh atribut dan method ke dalam class Member?
+
+Jawab
+
+1. untuk menginisialisasi variabel yang diwarisi oleh Superclass yaitu kelas Customer.
+2. agar bisa menjalankan method dari parent tanpa menulis ulang kodenya.
+3. penting ketika subclass perlu melakukan pekerjaan yang ada di parent class tanpa menulis ulang kode.
+4. super berarti menunjuk ke parent class sedangkan jika menggunakan this artinya menunjuk kelas itu sendiri atau sebclass.
+5. menghindari duplikasi kode dan mudahnya melakukan perubahan pada kode.

@@ -8,3 +8,9 @@ Jelaskan konsep encapsulation dan bagaimana method dapat membantu melindungi dat
 Mengapa constructor tidak memiliki return type, bahkan tidak menggunakan kata kunci void?
 
 Jawaban
+
+- Artinya ada beberapa konstruktor yang memiliki nama yang sama dalam 1 kelas tapi daftar paramaternya beda.
+- berdasarkan daftar parameter yang berbeda tiap konstruktornya.
+- akses secara langsung melanggar enkapsulasi sedangkan dengan method setter menerapkan enkapsulasi pada variabel private.
+- enkapsulasi artinya membungkus data dan method dan variabel dibuat private. menggunakan setter dan getter untuk mengakses variabel private dan memastikan melindungi data didalamnya.
+- karena konstruktor tidak mengembalikan nilai, tugasnya untuk menginisialisasi objek baru dari kelas itu sendiri.

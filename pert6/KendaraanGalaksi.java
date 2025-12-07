@@ -8,6 +8,9 @@ public abstract class KendaraanGalaksi {
     // - String namaKendaraan
     // - int levelEnergi         (0–100)
     // - int kapasitasPenumpang
+    protected String namaKendaraan;
+    protected int levelEnergi;
+    protected int kapasitasPenumpang;
 
 
     // ==========================================================
@@ -19,6 +22,11 @@ public abstract class KendaraanGalaksi {
     //   - namaKendaraan
     //   - kapasitasPenumpang
     // levelEnergi default = 100.
+    public KendaraanGalaksi(String namaKendaraan, int kapasitasPenumpang) {
+        this.namaKendaraan = namaKendaraan;
+        this.kapasitasPenumpang = kapasitasPenumpang;
+        this.levelEnergi = 100;
+    }
 
 
     // ==========================================================
@@ -28,6 +36,15 @@ public abstract class KendaraanGalaksi {
     // TODO: Getter namaKendaraan
     // TODO: Getter levelEnergi
     // TODO: Getter kapasitasPenumpang
+    public String getNamaKendaraan() {
+        return namaKendaraan;
+    }
+    public int getLevelEnergi() {
+        return levelEnergi;
+    }
+    public int getKapasitasPenumpang() {
+        return kapasitasPenumpang;
+    }
 
 
     // ==========================================================
@@ -38,6 +55,10 @@ public abstract class KendaraanGalaksi {
     // Method final tampilStatus()
     // Format:
     // "[namaKendaraan] | Energi: [levelEnergi]% | Kapasitas: [kapasitasPenumpang] awak"
+    public final void tampilStatus() {
+        System.out.printf("%s | Energi: %d%% | Kapasitas: %d awak%n",
+                namaKendaraan, levelEnergi, kapasitasPenumpang);
+    }
 
 
     // ==========================================================
@@ -46,10 +67,13 @@ public abstract class KendaraanGalaksi {
 
     // TODO:
     // abstract void aktifkanMesin();
+    public abstract void aktifkanMesin();
 
     // TODO:
     // abstract void jelajah(int jarak);
+    public abstract void jelajah(int jarak);
 
     // TODO:
     // abstract void isiEnergi(int jumlah);
+    public abstract void isiEnergi(int jumlah);
 }
