@@ -12,3 +12,4 @@ Jawaban
 - Karena dengan konstanta final bisa menjamin data tidak akan bisa diubah sehingga bisa mencegah kesalahan tidak sengaja.
 - jika kita mencoba mengubah nilai final kompiler akan menolak dan kelaur error, contohnya ketika kita ingin mengubah nilai dari faktorAktivitas=1.2 menjadi 1.5 maka muncul error 'java: cannot assign a value to static final variable faktorAktivitas'.
 - Menggunakan kata kunci 'public static final tipe_data nama_konstanta = nilai;' 
+.
